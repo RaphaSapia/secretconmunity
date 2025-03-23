@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+            <div class="col col-md-4 ">
+                <form method="post" class="border mt-2 p-3" novalidate>
+                    {{form_create.csrf_token}}
+                    <legend>Create</legend>
+                    <fieldset>
+                        <div class="form-group">
+                            {{ form_create.email.label(class='form-control-label') }}
+
+                            {% if form_create.email.errors %}
+                                {{ form_create.email(class='form-control is-invalid') }}
+                            <div class="invalid-feedback">
+                                {% for error in form_create.email.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_create.email(class='form-control') }}
+                            {% endif%}
+
+                        </div>
+                        <div class="form-group">
+                            {{ form_create.user.label(class='form-control-label') }}
+
+                            {% if form_create.user.errors %}
+                                {{ form_create.user(class='form-control is-invalid') }}
+                            <div class="invalid-feedback">
+                                {% for error in form_create.user.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_create.user(class='form-control') }}
+                            {% endif%}
+                        </div>
+                        <div class="form-group">
+                            {{ form_create.key.label(class='form-control-label') }}
+
+                            {% if form_create.key.errors %}
+                                {{ form_create.key(class='form-control is-invalid') }}
+                            <div class="invalid-feedback">
+                                {% for error in form_create.key.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_create.key(class='form-control') }}
+                            {% endif%}
+                        </div>
+                        <div class="form-group">
+                            {{ form_create.confirm_key.label(class='form-control-label') }}
+
+                            {% if form_create.confirm_key.errors %}
+                                {{ form_create.confirm_key(class='form-control is-invalid') }}
+                            <div class="invalid-feedback">
+                                {% for error in form_create.confirm_key.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                                {{ form_create.confirm_key(class='form-control') }}
+                            {% endif%}
+                        </div>
+                    </fieldset>
+                    {{ form_create.submit_create(class='btn btn-dark mt-2') }}
+                </form>
+            </div>
+
+
+{% endblock %}

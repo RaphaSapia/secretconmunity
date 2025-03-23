@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <h1>Secrety Community</h1>
+    <h2>A community for VIPs</h2>
+    <hr>
+    <div class="row">
+        {% for post in posts %}
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center me-2">
+                            <img src="{{ url_for('static', filename='photo_profile/{}' .format(post.author.photo_profile)) }}" class="rounded me-2">
+                            <p class="card-text text-center">{{ post.author.user }}</p>
+                            <div class="d-flex flex-wrap justify-content-center specialty-container" >
+                                {% for specialty in post.author.subjects.split(";") %}
+                                    <button type="button" class="btn me-2 ms-0 specialty-button" style="background-color: #333; color: #fff; width: 100%; padding: 0.25rem 0.5rem; font-size: 0.75rem;" disabled>{{ specialty }}</button>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="post-content" >
+                            <a style="text-decoration: none;" href="{{ url_for('view_post', post_id=post.post_id) }}">
+                                <div class="d-flex flex-column align-items-start">
+                                    <h3 class="card-title">{{ post.title }}</h3>
+                                    <small class="text-muted" style="font-size: 0.75rem">{{ post.date_created.strftime("%d/%m/%Y %H:%M") }}</small>
+                                </div>
+                                </h3>
+                            </a>
+                            <p class="card-text post-body-border">{{ post.body | trim }}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+

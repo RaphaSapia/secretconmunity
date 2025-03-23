@@ -1,0 +1,56 @@
+<!-- navbar.html -->
+
+<!-- Barra de navegação principal -->
+<nav class="navbar navbar-expand-lg navbar-custom" ">
+    <div class="container-fluid">
+        <!-- Logo/Nome do site -->
+        <a class="navbar-brand brand-link" href="{{ url_for('secretconmunity') }}">Secret Community</a>
+
+        <!-- Botão de toggle para dispositivos móveis -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Conteúdo da navbar (links e botões) -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links de navegação à esquerda -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% if current_user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{ url_for('contacts') }}">Contacts</a>
+                </li>
+                {% if current_user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{ url_for('users') }}">Users</a>
+                </li>
+                {% endif %}
+            </ul>
+
+            <!-- Botões de ação à direita -->
+            <ul class="navbar-nav">
+                {% if current_user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-outline-secondary nav-link text-white nav-btn" href="{{ url_for('createpost') }}">Create Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-outline-secondary nav-link text-white nav-btn" href="{{ url_for('profile') }}">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-outline-secondary nav-link text-white nav-btn" href="{{ url_for('logout') }}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-outline-secondary nav-link text-white nav-btn" href="{{ url_for('login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm btn-outline-secondary nav-link text-white nav-btn" href="{{ url_for('create') }}">Create Account</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
