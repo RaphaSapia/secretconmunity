@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e8969a0-8345-4b90-b1b9-d14e3843a079" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SecretCommunity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/static/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/static/photo_profile/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/createpost.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/editprofile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/secretconmunity.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secretcommunity/templates/users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tester.py" afterDir="false" />
-    </list>
+    <list default="true" id="6e8969a0-8345-4b90-b1b9-d14e3843a079" name="Changes" comment="db atualização" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +21,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RaphaSapia"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RaphaSapia/secretconmunityportfolio",
+    "accountId": "09f97261-7960-47da-875a-fead743151a1"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -101,6 +86,35 @@
       <option name="presentableId" value="Default" />
       <updated>1741219569179</updated>
     </task>
+    <task id="LOCAL-00001" summary="db atualização">
+      <option name="closed" value="true" />
+      <created>1742764276017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742764276017</updated>
+    </task>
+    <task id="LOCAL-00002" summary="db atualização">
+      <option name="closed" value="true" />
+      <created>1742765466000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742765466000</updated>
+    </task>
+    <task id="LOCAL-00003" summary="db atualização">
+      <option name="closed" value="true" />
+      <created>1742765629238</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742765629238</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="db atualização" />
+    <option name="LAST_COMMIT_MESSAGE" value="db atualização" />
   </component>
 </project>
