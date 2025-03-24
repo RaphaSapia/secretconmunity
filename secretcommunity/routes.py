@@ -100,7 +100,7 @@ def save_photo(form_photo):
     random_hex = secrets.token_hex(8)
     name, extention = os.path.splitext(form_photo.filename)
     photo_name = name + random_hex + extention
-    photo_path = os.path.join(app.root_path, r'static\photo_profile', photo_name)
+    photo_path = os.path.join(app.root_path, 'static', 'photo_profile', photo_name)
     form_photo.save(photo_path)
     size = (200, 200)
     img = Image.open(photo_path)
