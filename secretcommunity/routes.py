@@ -60,7 +60,7 @@ def login():
 def create():
     form_create = FormCreate()
     if form_create.validate_on_submit():
-        key_cript = bcrypt.generate_password_hash(form_create.key.data)
+        key_cript = bcrypt.generate_password_hash(form_create.key.data).decode('utf-8')
         user = User(user=form_create.user.data, email=form_create.email.data, password=key_cript)
         database.session.add(user)
         database.session.commit()

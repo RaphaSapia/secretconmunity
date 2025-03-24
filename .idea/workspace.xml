@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6e8969a0-8345-4b90-b1b9-d14e3843a079" name="Changes" comment="db atualização">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secretcommunity/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/secretcommunity/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/secretcommunity/community.db" beforeDir="false" afterPath="$PROJECT_DIR$/secretcommunity/community.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/tester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secretcommunity/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/secretcommunity/routes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742775311881</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="db atualização">
+      <option name="closed" value="true" />
+      <created>1742779023749</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742779023749</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
